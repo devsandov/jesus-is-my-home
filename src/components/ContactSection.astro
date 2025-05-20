@@ -1,20 +1,39 @@
-<section class="py-12 bg-gray-50" id="contact">
-  <div class="max-w-3xl mx-auto text-center">
-    <h2 class="text-2xl font-bold mb-4">Contacto y Donaciones</h2>
-    <div class="mb-4">
-      <p class="font-semibold text-purple-600">Donaciones monetarias:</p>
-      <p class="text-base">Banco Industrial No. 230-003117-2</p>
-      <p class="text-xs text-gray-600 mb-2">A nombre de: Asociación Hogar Jesucristo es mi casa</p>
-    </div>
-    <div class="mb-4">
-      <p><span class="font-semibold">Teléfono:</span> <a href="tel:+50252150970" class="text-purple-600">+502 5215-0970</a></p>
-      <p><span class="font-semibold">Email:</span> <a href="mailto:aracelideaguilar@yahoo.com" class="text-purple-600">aracelideaguilar@yahoo.com</a></p>
-      <p><span class="font-semibold">Email:</span> <a href="mailto:asociacionhogarjesumicasa@gmail.com" class="text-purple-600">asociacionhogarjesumicasa@gmail.com</a></p>
-      <p><span class="font-semibold">Sitio web:</span> <a href="https://www.ministeriosjesucristo.org" target="_blank" class="text-purple-600">ministeriosjesucristo.org</a></p>
+---
+// ContactTable.astro
+---
+<section class="max-w-2xl mx-auto px-4 py-10">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-5 gap-x-10 bg-white/80 rounded-2xl shadow p-6">
+    <div>
+      <div class="text-xs uppercase text-gray-400 mb-1">Teléfono</div>
+      <a href="tel:+50252150970" class="text-base text-purple-700 hover:underline font-semibold">+502 5215-0970</a>
     </div>
     <div>
-      <p class="font-semibold">Dirección:</p>
-      <p class="text-xs text-gray-600">22 avenida 12-65 Zona 6, Barrio San Antonio, Guatemala Ciudad, Guatemala 01006</p>
+      <div class="text-xs uppercase text-gray-400 mb-1">Banco</div>
+      <div class="text-base text-gray-700 font-medium">Industrial No. 230-003117-2</div>
+    </div>
+    <div>
+      <div class="text-xs uppercase text-gray-400 mb-1">Correo principal</div>
+      <a href="mailto:aracelideaguilar@yahoo.com" class="text-base text-gray-700 hover:text-purple-600 hover:underline font-medium">aracelideaguilar@yahoo.com</a>
+    </div>
+    <div>
+      <div class="text-xs uppercase text-gray-400 mb-1">A nombre de</div>
+      <div class="text-base text-gray-700 font-medium">Asociación Hogar Jesucristo es mi casa</div>
+    </div>
+    <div>
+      <div class="text-xs uppercase text-gray-400 mb-1">Correo alterno</div>
+      <a href="mailto:asociacionhogarjesumicasa@gmail.com" class="text-base text-gray-700 hover:text-purple-600 hover:underline font-medium">asociacionhogarjesumicasa
+        @gmail.com</a>
+    </div>
+    <div>
+      <div class="text-xs uppercase text-gray-400 mb-1">Sitio web</div>
+      <a href="https://ministeriosjesucristo.org" target="_blank" class="text-base text-purple-700 hover:underline font-semibold">ministeriosjesucristo.org</a>
+    </div>
+    <div class="sm:col-span-2">
+      <div class="text-xs uppercase text-gray-400 mb-1">Dirección</div>
+      <div class="text-base text-gray-700">
+        22 avenida 12-65 Zona 6, Barrio San Antonio<br />
+        Guatemala Ciudad, Guatemala 01006
+      </div>
     </div>
   </div>
 </section>
