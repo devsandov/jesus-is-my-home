@@ -1,0 +1,11 @@
+---
+const { title, children } = Astro.props;
+let open = false;
+---
+<div class="border-b">
+  <!-- <button class="w-full flex justify-between items-center py-3 text-left font-semibold" on:click={() => open = !open}> -->
+    <span>{title}</span>
+    <span>{open ? '▲' : '▼'}</span>
+  </button>
+  {open && <div class="pl-4 pb-4">{children}</div>}
+</div>
