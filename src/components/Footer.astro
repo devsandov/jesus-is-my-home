@@ -1,3 +1,21 @@
-<footer class="py-6 bg-purple-900 text-white text-center rounded-t-2xl mt-8">
-  <div class="text-sm">&copy; {new Date().getFullYear()} Asociación Jesucristo es mi Casa. Todos los derechos reservados.</div>
+---
+// Footer.astro
+---
+<footer class="mt-12">
+  <div class="max-w-4xl mx-auto px-4 py-8 text-center rounded-t-2xl bg-gradient-to-t from-purple-700 to-purple-500 text-white shadow-lg">
+    <div class="mb-2 font-medium text-base md:text-lg">
+      © {new Date().getFullYear()} Asociación Jesucristo es mi Casa
+    </div>
+    <div class="text-xs md:text-sm text-purple-100 tracking-wide">
+      Todos los derechos reservados.
+    </div>
+    <div class="flex justify-center gap-3 mt-4">
+      <a href="mailto:aracelideaguilar@yahoo.com" class="hover:text-white/90 transition" aria-label="Correo principal">
+        <svg class="w-5 h-5 inline" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15A2.25 2.25 0 0 1 2.25 17.25V6.75M21.75 6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25M21.75 6.75v.243a2.25 2.25 0 0 1-.888 1.8l-7.5 5.625a2.25 2.25 0 0 1-2.724 0l-7.5-5.625a2.25 2.25 0 0 1-.888-1.8V6.75" /></svg>
+      </a>
+      <a href="https://ministeriosjesucristo.org" target="_blank" rel="noopener" class="hover:text-white/90 transition" aria-label="Sitio web">
+        <svg class="w-5 h-5 inline" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v3.75M12 20.25V21m9-9h-3.75M3.75 12H3m14.45-7.25a9 9 0 1 1-12.9 0" /></svg>
+      </a>
+    </div>
+  </div>
 </footer>
